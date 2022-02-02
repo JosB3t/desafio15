@@ -1,0 +1,12 @@
+$textoImportante: (
+    lorem1: rgb(54, 47, 47),
+    lorem2: blue,
+);
+
+@each $frases, $color in $textoImportante {
+    .#{$frases}{
+        color: $color;
+        font-weight: bold;
+    }
+    
+}
